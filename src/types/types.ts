@@ -57,6 +57,9 @@ export interface UploadResponseFormat<AdditionalFileData = {}> {
    *             also can contain any additional data that will be saved and passed back
    */
   file: {
+    /**
+     * The path of the uploaded image.
+     */
     path: string;
     /**
      * The URL of the uploaded image.
@@ -94,6 +97,9 @@ export type ImageToolData<Actions = {}, AdditionalFileData = {}> = {
    * Also can contain any additional data.
    */
   file: {
+    /**
+     * The path of the image.
+     */
     path: string;
     /**
      * The URL of the image.
@@ -195,6 +201,9 @@ export interface HTMLPasteEventDetailExtended extends HTMLPasteEventDetail {
  * Parameter type of Image setter function in ImageTool
  */
 export type ImageSetterParam = {
+  /**
+   * file path of the image
+   */
   path: string;
   /**
    * url path of the image
